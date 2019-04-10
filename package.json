@@ -1,0 +1,31 @@
+{
+  "name": "babel-plugin-transform-modules-amd-deferred",
+  "version": "1.0.0",
+  "description": "A plugin to work around circular dependencies by deferring the import of selected amd modules",
+  "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bennieswart/babel-plugin-transform-modules-amd-deferred.git"
+  },
+  "scripts": {
+    "build": "babel src -d lib"
+  },
+  "keywords": [
+    "deferred",
+    "circular",
+    "dependency",
+    "import",
+    "babel"
+  ],
+  "author": "Bennie Swart <bennieswart@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "git+https://github.com/bennieswart/babel-plugin-transform-modules-amd-deferred/issues"
+  },
+  "homepage": "https://github.com/bennieswart/babel-plugin-transform-modules-amd-deferred#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.4.3",
+    "@babel/core": "^7.4.3",
+    "@babel/preset-env": "^7.4.3"
+  }
+}
