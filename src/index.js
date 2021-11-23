@@ -27,10 +27,10 @@ module.exports = function (babel) {
           path.dirname(this.getModuleName()),
           nodepath.node.source.value
         )));
-        const DECLARATION = t.VariableDeclaration(
+        const DECLARATION = specs.length ? t.VariableDeclaration(
           'let',
           specs.map(spec => t.VariableDeclarator(t.Identifier(spec.local.name)))
-        );
+        ) : null;
         const ASSIGNMENTS = specs.map(spec =>
           t.ExpressionStatement(
             t.AssignmentExpression(

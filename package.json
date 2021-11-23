@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-transform-modules-amd-deferred",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A plugin to work around circular dependencies by deferring the import of selected amd modules",
   "main": "lib/index.js",
   "repository": {
